@@ -15,5 +15,29 @@
 /* ******************************** */
 
 /* Colores */
+:root {
+  --color-escritorio: #f25041;
+  --color-tableta: #33a6a6;
+  --color-movil: #8c1f66;
+}
 
 /* ******************************** */
+body {
+  background-color: var(--color-escritorio);
+  width: 100%;
+  height: 100vh;
+}
+
+/* Tableta */
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: var(--color-tableta);
+  }
+}
+
+/* Movil */
+@media only screen and (max-width: 393px) {
+  body {
+    background-color: var(--color-movil);
+  }
+}
